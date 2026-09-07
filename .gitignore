@@ -1,0 +1,131 @@
+# =========================
+# Environment & Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+*.secret
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+
+# =========================
+# Terraform
+# =========================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plans
+*.tfplan
+tfplan
+
+
+# =========================
+# Kubernetes
+# =========================
+
+.kube/
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+
+# Kubernetes secrets generated locally
+kubernetes/secrets/*.yaml
+kubernetes/secrets/*.yml
+
+
+# =========================
+# LocalStack
+# =========================
+
+localstack/data/
+localstack/volume/
+
+
+# =========================
+# Docker
+# =========================
+
+docker-compose.override.yml
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+
+# =========================
+# Application
+# =========================
+
+node_modules/
+vendor/
+dist/
+build/
+coverage/
+.tmp/
+temp/
+
+
+# =========================
+# IDE
+# =========================
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+.idea/
+*.iml
+
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# =========================
+# Certificates & Security
+# =========================
+
+certs/
+secrets/
+*.token
+
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
