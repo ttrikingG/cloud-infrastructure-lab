@@ -5,7 +5,13 @@ variable "aws_region" {
 }
 
 variable "localstack_endpoint" {
-  description = "LocalStack endpoint"
+  description = "Generic LocalStack endpoint"
+  type        = string
+  default     = "http://localhost:4566"
+}
+
+variable "s3_endpoint" {
+  description = "LocalStack S3 endpoint"
   type        = string
   default     = "http://s3.localhost.localstack.cloud:4566"
 }
